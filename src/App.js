@@ -52,115 +52,56 @@ function App() {
 
         {/* Content on top of the video */}
         <div className="gradientOverlay">
-          <div className="RegisterTodayToAccessTheEarlyBirdOffer">
+          <div className="textStyle1">
             Register today to access the early bird offer!
           </div>
-          <div className="SafeguardYourIntellectualPropertyWhileOutsourcing">
+          <div className="textStyle2">
             Safeguard your intellectual property while outsourcing
           </div>
           {/* Button */}
-          <div className="buttonStyle">Sign up for early access</div>
+          <a href="#">
+            <div className="buttonStyle">Sign up for early access</div>
+          </a>
         </div>
       </div>
 
       {/* Section C */}
-      <div style={{ display: "flex", height: "734px" }}>
+      <div className="sectionC">
         {/* C.1 */}
         <div
-          style={{
-            width: "60%",
-            backgroundImage: "url(/assets/img/P1.png)",
-            backgroundSize: "cover",
-          }}
-        ></div>
+          className="imageBoxLeft"
+          style={{ backgroundImage: "url(/assets/img/P1.png)" }}
+        />
 
         {/* C.2 */}
-        <div
-          style={{
-            width: "40%",
-            background: "white",
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
-            padding: "20px",
-          }}
-        >
-          <div
-            className="UnlockTheSecretsOfIntellectualProperty"
-            style={{
-              fontSize: 24,
-              fontFamily: "Source Sans Pro",
-              fontWeight: "700",
-              wordWrap: "break-word",
-            }}
-          >
+        <div className="textBoxRight">
+          <div className="textStyle3">
             Unlock the Secrets of Intellectual Property:
           </div>
-          <div
-            className="MasterTheArtOfProtectingYourIdeasBrandAndSoftwareInTodaySCompetitiveLandscape"
-            style={{
-              fontSize: 46,
-              fontFamily: "Source Sans Pro",
-              fontWeight: "400",
-              wordWrap: "break-word",
-            }}
-          >
+          <div className="textStyle4">
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
-          <div
-            className="RegisterForTheLaunch"
-            style={{
-              fontSize: 24,
-              fontFamily: "Source Sans Pro",
-              fontWeight: "700",
-              wordWrap: "break-word",
-            }}
-          >
-            Register for the launch
-          </div>
-          <div className="Line1" style={{ border: "1px black solid" }}></div>
+          <a href="#">
+            <div className="buttonStyle2">Register for the launch</div>
+          </a>
         </div>
       </div>
 
       {/* Section D */}
-      <div
-        style={{
-          width: "100%",
-          padding: "20px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "20px",
-        }}
-      >
-        <div
-          className="BeAmongTheFirstToSignUpAndGainACompetitiveEdgeInTheIpProtectionGame"
-          style={{
-            textAlign: "center",
-            fontSize: 24,
-            fontFamily: "Source Sans Pro",
-            fontWeight: "700",
-            wordWrap: "break-word",
-          }}
-        >
+      <div className="sectionD">
+        <div className="textStyle5">
           Be among the first to sign up and gain a competitive edge in the IP
           protection game.
         </div>
-        <div
-          className="HelpUsShapeOurPlatformToFitYouByBecomingABetaTesterYouLlAlsoReceiveExclusiveContentInsiderUpdatesAndBePartOfACommunityRedefiningTheIpTheftAndSecurityIndustry"
-          style={{
-            textAlign: "center",
-            fontSize: 46,
-            fontFamily: "Source Sans Pro",
-            fontWeight: "400",
-            wordWrap: "break-word",
-          }}
-        >
+        <div className="textStyle6">
           Help us shape our platform to fit you by becoming a beta tester -
           you'll also receive exclusive content, insider updates and be part of
           a community redefining the IP theft and security industry.
         </div>
-        <div className="buttonStyle">Become a testing partner</div>
+        <a href="#">
+          <div className="buttonStyle3">Become a testing partner</div>
+        </a>
       </div>
     </div>
   );

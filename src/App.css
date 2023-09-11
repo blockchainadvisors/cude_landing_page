@@ -80,9 +80,10 @@ body {
   position: relative;
   color:white;
 }
-.player-wrapper {
+/* .player-wrapper {
   width: auto; 
   height: auto;
+  position: relative;
 }
 .react-player {
   padding-top: 56.25%; 
@@ -91,7 +92,7 @@ body {
 
 .react-player > video {
   position: absolute; 
-}
+} */
 
 .reactPlayer {
     position: relative;
@@ -112,7 +113,7 @@ body {
   z-index: 2;
 }
 
-.RegisterTodayToAccessTheEarlyBirdOffer {
+.textStyle1 {
  position: relative;
  top: 55%;
  left: 8%;
@@ -126,7 +127,7 @@ body {
  z-index: 3
 }
 
-.SafeguardYourIntellectualPropertyWhileOutsourcing {
+.textStyle2 {
   position: relative;
   top: 55%;
   left: 8%;
@@ -160,6 +161,106 @@ body {
   word-wrap: break-word;
   z-index: 3
 }
+
+.sectionC {
+  display: flex;
+   height: 734px;
+}
+.imageBoxLeft {
+  width: 60%;
+  background-size: cover;
+}
+.textBoxRight {
+    width: 40%;
+    background: white;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textStyle3 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 150%;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  word-wrap: break-word ;
+  z-index: 3
+ }
+ 
+ .textStyle4 {
+   position: relative;
+   color: rgb(0, 0, 0);
+   text-align: left;
+   font-size: 300%;
+   font-family: 'Source Sans Pro';
+   font-weight: 400;
+   word-wrap: break-word ;
+   z-index: 3
+  }
+
+  .buttonStyle2 {
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    line-height: 36px;
+    z-index: 3
+  }
+
+  .sectionD {
+   height: 734px;
+      width: 100%;
+      display: flex;
+      padding: 10%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+.textStyle5 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  word-wrap: break-word ;
+  z-index: 3
+ }
+ 
+ .textStyle6 {
+   position: relative;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   font-size: 300%;
+   font-family: 'Source Sans Pro';
+   font-weight: 400;
+   word-wrap: break-word ;
+   z-index: 3
+  }
+
+  .buttonStyle3 {
+    position: relative;
+    display: inline-flex;
+    padding: 10px 100px;
+    background: #0065FF;
+    border-radius: 4px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    z-index: 3
+  }
 @media only screen and (max-width: 600px) {
   .RegisterTodayToAccessTheEarlyBirdOffer {
     top: 20%;
@@ -175,5 +276,8 @@ body {
     .reactPlayer {
         /* height: 600px; */
         min-height: 700px;
+    }
+    .player-wrapper {      min-height: 700px;
+
     }
 }

@@ -39,7 +39,7 @@ body {
   font-family: 'Source Sans Pro';
   font-weight: 700;
   /*word-wrap: break-word;*/
-  /*text-align: center;*/
+  text-align: center;
   z-index: 3
 }
 .substring {
@@ -51,29 +51,23 @@ body {
   font-family: 'Source Sans Pro';
   font-weight: 400;
   /*word-wrap: break-word;*/
-  /*text-align: center;*/
+  text-align: center;
   z-index: 3
 }
-.timerBlock1 {
-  background-color: rgb(4, 0, 255);
-}
-.timerText1 {
-  color: white;
-}
-.substring1 {
+.textColorWhite {
   color: white;
 }
 
-.timerBlock2 {
+.textColorBlack {
+  color: black;
+}
+
+.backgroundColorLightGrey {
   background-color: rgb(239, 239, 239); 
 }
-.timerText2 {
-  color: rgb(0, 0, 0);
+.backgroundColorBlue {
+  background-color: rgb(4, 0, 255);
 }
-.substring2 {
-  color: rgb(0, 0, 0);
-}
-
 .sectionB {
   width: 100%;
   /* height: 1000px; */
@@ -108,43 +102,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  padding: 5%;
+  gap: 5%;
+  flex-direction: column-reverse;
   background:
     linear-gradient(71deg, rgba(14.38, 10.54, 29.75, 0.84) 20%, rgba(0, 0, 0, 0) 100%);
   z-index: 2;
 }
-
-.textStyle1 {
- position: relative;
- top: 55%;
- left: 8%;
- width: 70%;
- color: white;
- text-align: left;
- font-size: 150%;
- font-family: 'Source Sans Pro';
- font-weight: 400;
- word-wrap: break-word ;
- z-index: 3
-}
-
-.textStyle2 {
-  position: relative;
-  top: 55%;
-  left: 8%;
-  width: 70%;
-  color: white;
-  text-align: left;
-  font-size: 300%;
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
-  word-wrap: break-word ;
-  z-index: 3
- }
-
  .buttonStyle {
-  position: relative;
+  /* position: relative;
   top: 60%;
-  left: 8%;
+  left: 8%; */
   /* width: max-content; */
   padding: 10px 100px;
   background: #0065FF;
@@ -164,8 +133,11 @@ body {
 
 .sectionC {
   display: flex;
-   height: 734px;
+   height: 600px;
+   width: auto;
 }
+
+.sectionC.rowReverse {flex-direction: row-reverse;}
 .imageBoxLeft {
   width: 60%;
   background-size: cover;
@@ -180,28 +152,6 @@ body {
     justify-content: center;
 }
 
-.textStyle3 {
-  position: relative;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 150%;
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
-  word-wrap: break-word ;
-  z-index: 3
- }
- 
- .textStyle4 {
-   position: relative;
-   color: rgb(0, 0, 0);
-   text-align: left;
-   font-size: 300%;
-   font-family: 'Source Sans Pro';
-   font-weight: 400;
-   word-wrap: break-word ;
-   z-index: 3
-  }
-
   .buttonStyle2 {
     position: relative;
     padding: 10px 10px;
@@ -215,35 +165,38 @@ body {
   }
 
   .sectionD {
-   height: 734px;
-      width: 100%;
+   height: 600px;
       display: flex;
       padding: 10%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 5%;
   }
-  
-.textStyle5 {
+.textStyleCommon {
   position: relative;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-size: 150%;
   font-family: 'Source Sans Pro';
-  font-weight: 400;
+  font-weight: 600;
   word-wrap: break-word ;
   z-index: 3
+
+}
+.textStyleCommon.textCenter {
+  text-align: center;
  }
  
- .textStyle6 {
-   position: relative;
-   color: rgb(0, 0, 0);
-   text-align: center;
-   font-size: 300%;
-   font-family: 'Source Sans Pro';
-   font-weight: 400;
-   word-wrap: break-word ;
-   z-index: 3
+.textStyleCommon.textLeft {
+  text-align: left;
+ }
+ .textStyleCommon.textRight {
+   text-align: right;
+  }
+ 
+.textStyleCommon.textFontSizeLarge {
+  font-size: 250%;
+ }
+ .textStyleCommon.textFontSizeMid {
+   font-size: 120%;
   }
 
   .buttonStyle3 {
@@ -262,22 +215,25 @@ body {
     z-index: 3
   }
 @media only screen and (max-width: 600px) {
-  .RegisterTodayToAccessTheEarlyBirdOffer {
-    top: 20%;
+  
+.sectionC {
+  display: flex;
+   height: 400px;
+   width: auto;
+}
+  .textStyleCommon.textFontSizeMid {
+    font-size: 80%;
    }
-   
-   .SafeguardYourIntellectualPropertyWhileOutsourcing {
-     top: 20%;
+   .textStyleCommon.textFontSizeLarge {
+     font-size: 120%;
     }
     .buttonStyle {
-      top: 30%;
       padding: 10px 20px;
     }
-    .reactPlayer {
-        /* height: 600px; */
-        min-height: 700px;
+    .react-player {
+      width: 100%;
     }
-    .player-wrapper {      min-height: 700px;
-
+    .player-wrapper {      
+      min-height: 700px;
     }
 }

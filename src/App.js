@@ -8,29 +8,29 @@ function App() {
     <div className="App">
       {/* Section A */}
       <div className="sectionA">
-        <div className="timerBlock timerBlock1">
-          <div className="timerText timerText1 timerDays">10</div>
-          <div className="substring substring1">Days</div>
+        <div className="timerBlock backgroundColorBlue">
+          <div className="timerText textColorWhite timerDays">10</div>
+          <div className="substring textColorWhite">Days</div>
         </div>
-        <div className="timerBlock timerBlock2">
-          <div className="timerText timerText2 timerHours">12</div>
-          <div className="substring substring2">Hours</div>
+        <div className="timerBlock backgroundColorLightGrey">
+          <div className="timerText textColorBlack timerHours">12</div>
+          <div className="substring textColorBlack">Hours</div>
         </div>
-        <div className="timerBlock timerBlock2">
-          <div className="timerText timerText2">:</div>
-          <div className="substring substring2"></div>
+        <div className="timerBlock backgroundColorLightGrey">
+          <div className="timerText textColorBlack">:</div>
+          <div className="substring textColorBlack"></div>
         </div>
-        <div className="timerBlock timerBlock2">
-          <div className="timerText timerText2 timerMinutes">44</div>
-          <div className="substring substring2">Minutes</div>
+        <div className="timerBlock backgroundColorLightGrey">
+          <div className="timerText textColorBlack timerMinutes">44</div>
+          <div className="substring textColorBlack">Minutes</div>
         </div>
-        <div className="timerBlock timerBlock2">
-          <div className="timerText timerText2">:</div>
-          <div className="substring substring2"></div>
+        <div className="timerBlock backgroundColorLightGrey">
+          <div className="timerText textColorBlack">:</div>
+          <div className="substring textColorBlack"></div>
         </div>
-        <div className="timerBlock timerBlock2">
-          <div className="timerText timerText2 timerSeconds">06</div>
-          <div className="substring substring2">Seconds</div>
+        <div className="timerBlock backgroundColorLightGrey">
+          <div className="timerText textColorBlack timerSeconds">06</div>
+          <div className="substring textColorBlack">Seconds</div>
         </div>
       </div>
 
@@ -52,20 +52,20 @@ function App() {
 
         {/* Content on top of the video */}
         <div className="gradientOverlay">
-          <div className="textStyle1">
-            Register today to access the early bird offer!
-          </div>
-          <div className="textStyle2">
-            Safeguard your intellectual property while outsourcing
-          </div>
           {/* Button */}
           <a href="#">
             <div className="buttonStyle">Sign up for early access</div>
           </a>
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorWhite">
+            Safeguard your intellectual property while outsourcing
+          </div>
+          <div className="textStyleCommon textLeft textFontSizeMid textColorWhite">
+            Register today to access the early bird offer!
+          </div>
         </div>
       </div>
 
-      {/* Section C */}
+      {/* Section C-1 */}
       <div className="sectionC">
         {/* C.1 */}
         <div
@@ -75,10 +75,10 @@ function App() {
 
         {/* C.2 */}
         <div className="textBoxRight">
-          <div className="textStyle3">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
             Unlock the Secrets of Intellectual Property:
           </div>
-          <div className="textStyle4">
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
@@ -88,13 +88,82 @@ function App() {
         </div>
       </div>
 
+      {/* Section C-2 */}
+      <div className="sectionC rowReverse">
+        {/* C.1 */}
+        <div
+          className="imageBoxLeft"
+          style={{ backgroundImage: "url(/assets/img/P2.png)" }}
+        />
+
+        {/* C.2 */}
+        <div className="textBoxRight">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+            Get Ahead with Insider Strategies:
+          </div>
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+            Learn proven tactics for safeguarding your software using patents,
+            copyrights, and trade secrets.
+          </div>
+          <a href="#">
+            <div className="buttonStyle2">Register for the launch</div>
+          </a>
+        </div>
+      </div>
+
+      {/* Section C-3 */}
+      <div className="sectionC">
+        {/* C.1 */}
+        <div
+          className="imageBoxLeft"
+          style={{ backgroundImage: "url(/assets/img/P3.png)" }}
+        />
+
+        {/* C.2 */}
+        <div className="textBoxRight">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+            Unlock the Secrets of Intellectual Property:
+          </div>
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+            Master the art of protecting your ideas, brand, and software in
+            today's competitive landscape.
+          </div>
+          <a href="#">
+            <div className="buttonStyle2">Register for the launch</div>
+          </a>
+        </div>
+      </div>
+
+      {/* Section C-4 */}
+      <div className="sectionC rowReverse">
+        {/* C.1 */}
+        <div
+          className="imageBoxLeft"
+          style={{ backgroundImage: "url(/assets/img/P4.png)" }}
+        />
+
+        {/* C.2 */}
+        <div className="textBoxRight">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+            Boost Your Business:
+          </div>
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+            Understand IP tefth to avoid pitfalls and maximize your market
+            position.
+          </div>
+          <a href="#">
+            <div className="buttonStyle2">Register for the launch</div>
+          </a>
+        </div>
+      </div>
+
       {/* Section D */}
       <div className="sectionD">
-        <div className="textStyle5">
+        <div className="textStyleCommon textCenter textFontSizeMid textColorBlack">
           Be among the first to sign up and gain a competitive edge in the IP
           protection game.
         </div>
-        <div className="textStyle6">
+        <div className="textStyleCommon textCenter textFontSizeLarge textColorBlack">
           Help us shape our platform to fit you by becoming a beta tester -
           you'll also receive exclusive content, insider updates and be part of
           a community redefining the IP theft and security industry.

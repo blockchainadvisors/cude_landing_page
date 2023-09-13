@@ -4,6 +4,12 @@ import ReactPlayer from "react-player";
 import "@fontsource/source-sans-pro";
 
 function App() {
+  const stringDate = "13:00 Oct 25, 2023";
+  const date = new Date(stringDate);
+
+  const [registerTrial, setRegisterTrial] = useState(false);
+  // const [email, setEmail] = useState("");
+  const [surveyComplete, setSurveyComplete] = useState(false);
   return (
     <div className="App">
       {/* Section A */}

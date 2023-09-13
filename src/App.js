@@ -67,7 +67,7 @@ function App() {
         {/* React Player */}
         <div className="player-wrapper">
           <video
-            src={"/assets/video/V1.mp4"}
+            src={"/assets/video/V1C.mp4"}
             className="react-player"
             loop
             autoPlay

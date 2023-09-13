@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import "@fontsource/source-sans-pro";
-import Countdown from 'react-countdown';
+import Countdown from "react-countdown";
 
 function App() {
   const stringDate = "13:00 Oct 25, 2023";
@@ -12,54 +12,69 @@ function App() {
   // const [email, setEmail] = useState("");
   const [surveyComplete, setSurveyComplete] = useState(false);
 
-  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  const renderer = ({ days, formatted: {hours, minutes, seconds}, completed }) => {
     if (completed) {
       // Render a completed state
-      return <p>It's here!</p>;
+      return (
+        <div className="timerBlock backgroundColorBlue">
+          <p>It's here!</p>{" "}
+        </div>
+      );
     } else {
       // Render a countdown
-      return <div className="sectionA">
-      <div className="timerBlock backgroundColorBlue">
-        <div className="timerText textColorWhite timerDays">{days}</div>
-        <div className="substring textColorWhite">Days</div>
-      </div>
-      <div className="timerBlock backgroundColorLightGrey">
-        <div className="timerText textColorBlack timerHours">{hours}</div>
-        <div className="substring textColorBlack">Hours</div>
-      </div>
-      <div className="timerBlock backgroundColorLightGrey">
-        <div className="timerText textColorBlack">:</div>
-        <div className="substring textColorBlack"></div>
-      </div>
-      <div className="timerBlock backgroundColorLightGrey">
-        <div className="timerText textColorBlack timerMinutes">{minutes}</div>
-        <div className="substring textColorBlack">Minutes</div>
-      </div>
-      <div className="timerBlock backgroundColorLightGrey">
-        <div className="timerText textColorBlack">:</div>
-        <div className="substring textColorBlack"></div>
-      </div>
-      <div className="timerBlock backgroundColorLightGrey">
-        <div className="timerText textColorBlack timerSeconds">{seconds}</div>
-        <div className="substring textColorBlack">Seconds</div>
-      </div>
-    </div>
+      return (
+        <div className="sectionA">
+          <div className="timerBlock backgroundColorBlue">
+            <div className="timerText textColorWhite timerDays">{days}</div>
+            <div className="substring textColorWhite">Days</div>
+          </div>
+          <div className="timerBlock backgroundColorLightGrey">
+            <div className="timerText textColorBlack timerHours">{hours}</div>
+            <div className="substring textColorBlack">Hours</div>
+          </div>
+          <div className="timerBlock backgroundColorLightGrey">
+            <div className="timerText textColorBlack">:</div>
+            <div className="substring textColorBlack"></div>
+          </div>
+          <div className="timerBlock backgroundColorLightGrey">
+            <div className="timerText textColorBlack timerMinutes">
+              {minutes}
+            </div>
+            <div className="substring textColorBlack">Minutes</div>
+          </div>
+          <div className="timerBlock backgroundColorLightGrey">
+            <div className="timerText textColorBlack">:</div>
+            <div className="substring textColorBlack"></div>
+          </div>
+          <div className="timerBlock backgroundColorLightGrey">
+            <div className="timerText textColorBlack timerSeconds">
+              {seconds}
+            </div>
+            <div className="substring textColorBlack">Seconds</div>
+          </div>
+        </div>
+      );
     }
   };
 
   return (
     <div className="App">
       {/* Section A */}
-      <Countdown
-        date={date}
-        renderer={renderer}
-      />
+      <Countdown date={date} renderer={renderer} zeroPadTime={2} />
 
       {/* Section B */}
       <div className="sectionB">
         {/* React Player */}
         <div className="player-wrapper">
-          <ReactPlayer
+          <video
+            src={"/assets/video/V1.mp4"}
+            className="react-player"
+            loop
+            autoPlay
+            muted
+          />
+
+          {/* <ReactPlayer
             url="/assets/video/V1.mp4"
             playing
             muted
@@ -68,13 +83,17 @@ function App() {
             height="100%"
             className="react-player"
             controls={false}
-          />
+          /> */}
         </div>
 
         {/* Content on top of the video */}
         <div className="gradientOverlay">
           {/* Button */}
-          <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="buttonStyle">Sign up for early access</div>
           </a>
           <div className="textStyleCommon textLeft textFontSizeLarge textColorWhite">
@@ -103,7 +122,11 @@ function App() {
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
-          <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="buttonStyle2">Register for the launch</div>
           </a>
         </div>
@@ -126,7 +149,11 @@ function App() {
             Learn proven tactics for safeguarding your software using patents,
             copyrights, and trade secrets.
           </div>
-          <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="buttonStyle2">Register for the launch</div>
           </a>
         </div>
@@ -149,7 +176,11 @@ function App() {
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
-          <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="buttonStyle2">Register for the launch</div>
           </a>
         </div>
@@ -172,7 +203,11 @@ function App() {
             Understand IP tefth to avoid pitfalls and maximize your market
             position.
           </div>
-          <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="buttonStyle2">Register for the launch</div>
           </a>
         </div>
@@ -189,7 +224,11 @@ function App() {
           you'll also receive exclusive content, insider updates and be part of
           a community redefining the IP theft and security industry.
         </div>
-        <a href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="buttonStyle3">Become a testing partner</div>
         </a>
       </div>

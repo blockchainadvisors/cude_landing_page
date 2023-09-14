@@ -5,7 +5,7 @@ import "@fontsource/source-sans-pro";
 import Countdown from "react-countdown";
 
 function App() {
-  const stringDate = "13:00 Oct 25, 2023";
+  const stringDate = "Oct 25, 2023 13:00:00";
   const date = new Date(stringDate);
 
   const [registerTrial, setRegisterTrial] = useState(false);
@@ -67,23 +67,12 @@ function App() {
         {/* React Player */}
         <div className="player-wrapper">
           <video
-            src={"/assets/video/V1C.mp4"}
+            src={"/assets/video/V2.mp4"}
             className="react-player"
             loop
             autoPlay
             muted
           />
-
-          {/* <ReactPlayer
-            url="/assets/video/V1.mp4"
-            playing
-            muted
-            loop
-            width="100%"
-            height="100%"
-            className="react-player"
-            controls={false}
-          /> */}
         </div>
 
         {/* Content on top of the video */}

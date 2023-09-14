@@ -14,7 +14,7 @@ body {
 }
 
 .sectionA {
-    padding: 5%;
+  padding: 2% 5% 2% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
   gap: 5%;
   flex-direction: column-reverse;
   background:
-    linear-gradient(71deg, rgba(14.38, 10.54, 29.75, 0.84) 20%, rgba(0, 0, 0, 0) 100%);
+    linear-gradient(71deg, rgba(0, 0, 0, 0.84) 2%, rgba(0, 0, 0, 0) 100%);
   z-index: 2;
 }
  .buttonStyle {
@@ -223,6 +223,10 @@ body {
 .sectionB{
   height: 540px;
 }
+
+.gradientOverlay {
+  padding-bottom: 80px;
+}
 .sectionC {
   display: flex;
    height: 600px;
@@ -256,7 +260,7 @@ body {
   /*width: 100px;*/
   /*height: 140px;*/
   line-height: 100%;
-  font-size: 200%;
+  font-size: 180%;
   font-family: 'Source Sans Pro';
   font-weight: 700;
   /*word-wrap: break-word;*/

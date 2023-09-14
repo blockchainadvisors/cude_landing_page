@@ -72,6 +72,7 @@ function App() {
             loop
             autoPlay
             muted
+            playInline
           />
         </div>
 

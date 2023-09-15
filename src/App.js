@@ -67,7 +67,7 @@ function App() {
         {/* React Player */}
         <div className="player-wrapper">
           <video
-            src={"/assets/video/V2.mp4"}
+            src={"/assets/video/V1C.mp4"}
             className="react-player"
             loop
             autoPlay
@@ -86,10 +86,10 @@ function App() {
           >
             <div className="buttonStyle">Sign up for early access</div>
           </a>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorWhite">
+          <div className="width900 textStyleCommon textLeft textFontSizeLargeFront textColorWhite textWeight400">
             Safeguard your intellectual property while outsourcing
           </div>
-          <div className="textStyleCommon textLeft textFontSizeMid textColorWhite">
+          <div className="textStyleCommon textLeft textFontSizeMidFront textColorWhite textWeight600">
             Register today to access the early bird offer!
           </div>
         </div>
@@ -105,10 +105,10 @@ function App() {
 
         {/* C.2 */}
         <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
             Unlock the Secrets of Intellectual Property:
           </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
@@ -132,10 +132,10 @@ function App() {
 
         {/* C.2 */}
         <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
             Get Ahead with Insider Strategies:
           </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
             Learn proven tactics for safeguarding your software using patents,
             copyrights, and trade secrets.
           </div>
@@ -159,10 +159,10 @@ function App() {
 
         {/* C.2 */}
         <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
             Unlock the Secrets of Intellectual Property:
           </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
             Master the art of protecting your ideas, brand, and software in
             today's competitive landscape.
           </div>
@@ -186,10 +186,10 @@ function App() {
 
         {/* C.2 */}
         <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
             Boost Your Business:
           </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack">
+          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
             Understand IP tefth to avoid pitfalls and maximize your market
             position.
           </div>
@@ -205,11 +205,11 @@ function App() {
 
       {/* Section D */}
       <div className="sectionD">
-        <div className="textStyleCommon textCenter textFontSizeMid textColorBlack">
+        <div className="textStyleCommon textCenter textFontSizeMid textColorBlack textWeight600">
           Be among the first to sign up and gain a competitive edge in the IP
           protection game.
         </div>
-        <div className="textStyleCommon textCenter textFontSizeLarge textColorBlack">
+        <div className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400">
           Help us shape our platform to fit you by becoming a beta tester -
           you'll also receive exclusive content, insider updates and be part of
           a community redefining the IP theft and security industry.
@@ -218,6 +218,7 @@ function App() {
           href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
           target="_blank"
           rel="noopener noreferrer"
+          style={{paddingTop: "80px"}}
         >
           <div className="buttonStyle3">Become a testing partner</div>
         </a>

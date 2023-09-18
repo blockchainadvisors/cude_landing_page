@@ -213,7 +213,10 @@ function App() {
           Be among the first to sign up and gain a competitive edge in the IP
           protection game.
         </div>
-        <div className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400">
+        <div
+          className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400"
+          style={{ padding: "20px 150px 0px" }}
+        >
           Help us shape our platform to fit you by becoming a beta tester -
           you'll also receive exclusive content, insider updates and be part of
           a community redefining the IP theft and security industry.
@@ -222,7 +225,6 @@ function App() {
           href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ paddingTop: "80px" }}
         >
           <div className="buttonStyle3">Become a testing partner</div>
         </a>

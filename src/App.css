@@ -23,7 +23,7 @@ padding: 2% 5% 2% 5%;
 }
 .timerBlock {
 display: block;
-padding: 1%;
+padding: 9px;
 /*width: 100px;*/
 /*height: 140px;*/
 /*line-height: 180px;*/
@@ -216,7 +216,7 @@ font-size: 46px;
   font-size: 24px;
 }
 .textFontSizeLargeFront{
-  font-size: 72px;
+  font-size: 55px;
 }
 .textFontSizeMidFront{
   font-size: 32px;

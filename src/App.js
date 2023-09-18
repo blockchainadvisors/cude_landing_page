@@ -12,7 +12,11 @@ function App() {
   // const [email, setEmail] = useState("");
   const [surveyComplete, setSurveyComplete] = useState(false);
 
-  const renderer = ({ days, formatted: {hours, minutes, seconds}, completed }) => {
+  const renderer = ({
+    days,
+    formatted: { hours, minutes, seconds },
+    completed,
+  }) => {
     if (completed) {
       // Render a completed state
       return (
@@ -163,8 +167,8 @@ function App() {
             Unlock the Secrets of Intellectual Property:
           </div>
           <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Master the art of protecting your ideas, brand, and software in
-            today's competitive landscape.
+            Gain exclusive insights into UK and international trademark laws to
+            protect your brand globally.
           </div>
           <a
             href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
@@ -190,7 +194,7 @@ function App() {
             Boost Your Business:
           </div>
           <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Understand IP tefth to avoid pitfalls and maximize your market
+            Understand IP theft to avoid pitfalls and maximize your market
             position.
           </div>
           <a
@@ -218,7 +222,7 @@ function App() {
           href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
           target="_blank"
           rel="noopener noreferrer"
-          style={{paddingTop: "80px"}}
+          style={{ paddingTop: "80px" }}
         >
           <div className="buttonStyle3">Become a testing partner</div>
         </a>

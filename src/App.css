@@ -266,6 +266,9 @@ a {
   width: 100%;
 }
 
+.paddingSpecial1 {
+  padding: 20px 150px 0px;
+}
 
 @media (max-width:1010px) {
   .textFontSizeLarge {
@@ -355,6 +358,9 @@ a {
 
   .textBoxRight {
     width: 100%;
+  }
+  .paddingSpecial1 {
+    padding: 0px;
   }
 
 }

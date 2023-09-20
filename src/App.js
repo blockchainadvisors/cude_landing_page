@@ -214,8 +214,7 @@ function App() {
           protection game.
         </div>
         <div
-          className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400"
-          style={{ padding: "20px 150px 0px" }}
+          className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400 paddingSpecial1"
         >
           Help us shape our platform to fit you by becoming a beta tester -
           you'll also receive exclusive content, insider updates and be part of

@@ -117,7 +117,7 @@ function App() {
             today's competitive landscape.
           </div>
           <a
-            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -144,7 +144,7 @@ function App() {
             copyrights, and trade secrets.
           </div>
           <a
-            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -171,7 +171,7 @@ function App() {
             protect your brand globally.
           </div>
           <a
-            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -198,7 +198,7 @@ function App() {
             position.
           </div>
           <a
-            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
+            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
             target="_blank"
             rel="noopener noreferrer"
           >

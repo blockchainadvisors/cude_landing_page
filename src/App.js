@@ -1,232 +1,26 @@
 import React, { useState } from "react";
+import logo from './assets/img/logo_transparent_white.png';
 import "./App.css";
-// import ReactPlayer from "react-player";
-import "@fontsource/source-sans-pro";
-import Countdown from "react-countdown";
 
 function App() {
-  const stringDate = "Oct 25, 2023 13:00:00";
-  const date = new Date(stringDate);
-
-  const [registerTrial, setRegisterTrial] = useState(false);
-  // const [email, setEmail] = useState("");
-  const [surveyComplete, setSurveyComplete] = useState(false);
-
-  const renderer = ({
-    days,
-    formatted: { hours, minutes, seconds },
-    completed,
-  }) => {
-    if (completed) {
-      // Render a completed state
-      return (
-        <div className="timerBlock backgroundColorBlue">
-          <p>It's here!</p>{" "}
-        </div>
-      );
-    } else {
-      // Render a countdown
-      return (
-        <div className="sectionA">
-          <div className="timerBlock backgroundColorBlue">
-            <div className="timerText textColorWhite timerDays">{days}</div>
-            <div className="substring textColorWhite">Days</div>
-          </div>
-          <div className="timerBlock backgroundColorLightGrey">
-            <div className="timerText textColorBlack timerHours">{hours}</div>
-            <div className="substring textColorBlack">Hours</div>
-          </div>
-          <div className="timerBlock backgroundColorLightGrey">
-            <div className="timerText textColorBlack">:</div>
-            <div className="substring textColorBlack"></div>
-          </div>
-          <div className="timerBlock backgroundColorLightGrey">
-            <div className="timerText textColorBlack timerMinutes">
-              {minutes}
-            </div>
-            <div className="substring textColorBlack">Minutes</div>
-          </div>
-          <div className="timerBlock backgroundColorLightGrey">
-            <div className="timerText textColorBlack">:</div>
-            <div className="substring textColorBlack"></div>
-          </div>
-          <div className="timerBlock backgroundColorLightGrey">
-            <div className="timerText textColorBlack timerSeconds">
-              {seconds}
-            </div>
-            <div className="substring textColorBlack">Seconds</div>
-          </div>
-        </div>
-      );
-    }
-  };
-
   return (
     <div className="App">
-      {/* Section A */}
-      <Countdown date={date} renderer={renderer} zeroPadTime={2} />
-
-      {/* Section B */}
-      <div className="sectionB">
-        {/* React Player */}
-        <div className="player-wrapper">
-          <video
-            src={"/assets/video/V1C.mp4"}
-            className="react-player"
-            loop
-            autoPlay
-            muted
-            playsInline
-          />
-        </div>
-
-        {/* Content on top of the video */}
-        <div className="gradientOverlay">
-          {/* Button */}
-          <a
-            href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="buttonStyle">Sign up for early access</div>
-          </a>
-          <div className="width900 textStyleCommon textLeft textFontSizeLargeFront textColorWhite textWeight400">
-            Safeguard your intellectual property while outsourcing
-          </div>
-          <div className="textStyleCommon textLeft textFontSizeMidFront textColorWhite textWeight600">
-            Register today to access the early bird offer!
-          </div>
-        </div>
+      <div className="fixed top-0 left-0 w-full h-[70px] py-5 px-24">
+        <img src={logo} className="relative w-max h-full" alt="CUDE" />
       </div>
 
-      {/* Section C-1 */}
-      <div className="sectionC">
-        {/* C.1 */}
-        <div
-          className="imageBoxLeft"
-          style={{ backgroundImage: "url(/assets/img/P1.png)" }}
-        />
-
-        {/* C.2 */}
-        <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
-            Unlock the Secrets of Intellectual Property:
-          </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Master the art of protecting your ideas, brand, and software in
-            today's competitive landscape.
-          </div>
-          <a
-            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="buttonStyle2">Register for the launch</div>
+      <div className="flex items-center justify-end w-full h-full">
+        <div className="MainBody flex flex-col justify-center gap-5 bg-white rounded-sm py-10 px-24">
+          <h3 className="MainHeading text-xl sm:text-4xl">
+            We are now live...
+          </h3>
+          <p className="MainInfo text-sm sm:text-lg">
+            Join our testing partners today<br/>and gain early bird access to our<br/>solution for free.
+          </p>
+          <a className="MainInfo text-sm rounded-sm bg-[#0065FF] hover:bg-[#0065FF]/50 transition text-white p-2 text-center" href="https://prototype.thecude.com/">
+            Register for free
           </a>
         </div>
-      </div>
-
-      {/* Section C-2 */}
-      <div className="sectionC rowReverse">
-        {/* C.1 */}
-        <div
-          className="imageBoxLeft"
-          style={{ backgroundImage: "url(/assets/img/P2.png)" }}
-        />
-
-        {/* C.2 */}
-        <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
-            Get Ahead with Insider Strategies:
-          </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Learn proven tactics for safeguarding your software using patents,
-            copyrights, and trade secrets.
-          </div>
-          <a
-            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="buttonStyle2">Register for the launch</div>
-          </a>
-        </div>
-      </div>
-
-      {/* Section C-3 */}
-      <div className="sectionC">
-        {/* C.1 */}
-        <div
-          className="imageBoxLeft"
-          style={{ backgroundImage: "url(/assets/img/P3.png)" }}
-        />
-
-        {/* C.2 */}
-        <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
-            Unlock the Secrets of Intellectual Property:
-          </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Gain exclusive insights into UK and international trademark laws to
-            protect your brand globally.
-          </div>
-          <a
-            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="buttonStyle2">Register for the launch</div>
-          </a>
-        </div>
-      </div>
-
-      {/* Section C-4 */}
-      <div className="sectionC rowReverse">
-        {/* C.1 */}
-        <div
-          className="imageBoxLeft"
-          style={{ backgroundImage: "url(/assets/img/P4.png)" }}
-        />
-
-        {/* C.2 */}
-        <div className="textBoxRight">
-          <div className="textStyleCommon textLeft textFontSizeMid textColorBlack textWeight600">
-            Boost Your Business:
-          </div>
-          <div className="textStyleCommon textLeft textFontSizeLarge textColorBlack textWeight400">
-            Understand IP theft to avoid pitfalls and maximize your market
-            position.
-          </div>
-          <a
-            href="https://www.eventbrite.co.uk/e/risky-business-addressing-the-threat-of-digital-and-ai-to-your-ip-tickets-732698790807"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="buttonStyle2">Register for the launch</div>
-          </a>
-        </div>
-      </div>
-
-      {/* Section D */}
-      <div className="sectionD">
-        <div className="textStyleCommon textCenter textFontSizeMid textColorBlack textWeight600">
-          Be among the first to sign up and gain a competitive edge in the IP
-          protection game.
-        </div>
-        <div
-          className="textStyleCommon textCenter textFontSizeLarge textColorBlack textWeight400 paddingSpecial1"
-        >
-          Help us shape our platform to fit you by becoming a beta tester -
-          you'll also receive exclusive content, insider updates and be part of
-          a community redefining the IP theft and security industry.
-        </div>
-        <a
-          href="https://7zku19palcq.typeform.com/to/Sjoouujq?typeform-source=1x3de6lm2ck.typeform.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="buttonStyle3">Become a testing partner</div>
-        </a>
       </div>
     </div>
   );

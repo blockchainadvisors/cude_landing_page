@@ -23,41 +23,44 @@
 }
 
 .MainBody {
-  height: 70%;
-  padding-left: 120px;
-  padding-right: 120px;
-  width: max-content;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
 }
 
-@media (min-width:200px)  {
+@media (min-width: 652px)  {
   .MainBody {
-    height: 40%;
-    margin-top: 0px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
+    padding-left: 64px;
+    padding-right: 50px;
+    width: 500px;
+  }
+
+  .MainBody p {
+    padding-right: 80px;
+  }
+
+  .MainBody a {
+    margin-right: 80px;
   }
 }
 
-@media (min-width:641px)  {
+@media (min-width: 1025px)  {
   .MainBody {
-    height: 50%;
     margin-top: 0px;
-    padding-left: 50px;
+    padding-left: 64px;
     padding-right: 50px;
-    width: 60%;
+    width: 30%;
   }
-}
 
-@media (min-width:1025px)  {
-  .MainBody {
-    height: 50%;
-    margin-top: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 40%;
+  .MainBody p {
+    padding-right: 25%;
+  }
+
+  .MainBody a {
+    margin-right: 25%;
   }
 }
 

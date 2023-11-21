@@ -3,75 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
 .App {
-  background-image: url('./assets/img/bg.webp');  
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: 'Source Sans 3', sans-serif;
   width: 100vw;
   height: 100vh;
 }
-
-.MainHeading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.MainInfo {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 400;
-}
-
-.MainBody {
-  padding-top: 30px;
-  padding-bottom: 70px;
-
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-}
-
-@media (min-width: 652px)  {
-  .MainBody {
-    padding-top: 70px;
-    padding-left: 64px;
-    padding-right: 50px;
-    width: 500px;
-  }
-
-  .MainBody p {
-    padding-right: 80px;
-  }
-
-  .MainBody a {
-    margin-right: 80px;
-  }
-}
-
-@media (min-width: 1025px)  {
-  .MainBody {
-    margin-top: 0px;
-    padding-top: 70px;
-    padding-left: 64px;
-    padding-right: 50px;
-    width: 450px;
-  }
-
-  .MainBody p {
-    padding-right: 25%;
-  }
-
-  .MainBody a {
-    margin-right: 25%;
-  }
-}
-
-/* @media only screen and (max-width: 667px) {
-  .MainBody {
-    height: 50%;
-    margin-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
-  }
-} */

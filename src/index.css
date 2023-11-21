@@ -8,6 +8,40 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    @apply text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl font-extrabold;
+  }
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  h4 {
+    @apply text-2xl text-blue-500 font-sans;
+  }
+
+  h5 {
+    @apply text-xl font-bold;
+  }
+
+  h6 {
+    @apply text-lg font-normal leading-7 font-sans;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,9 +49,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: #fff;
 }

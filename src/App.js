@@ -226,7 +226,7 @@ function App() {
 
         <div id="contact" className="relative w-full h-full lg:h-[80%] bg-blue-600 lg:bg-transparent">
           <img src={BlueSvg} className="hidden lg:block absolute top-0 left-0 object-cover object-center h-full w-full -z-[1]" alt="BlueSVG" />
-          <div className="pt-2 sm:pt-10 lg:pt-[175px] px-10 text-white">
+          <div className="pt-10 lg:pt-[175px] px-10 text-white">
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-32">
               <div className="w-full flex flex-col gap-3">
                 <h3 className="text-[#EEFF2B]">Get in touch</h3>

@@ -226,7 +226,7 @@ function App() {
 
         <div id="contact" className="relative w-full h-full lg:h-[80%] bg-blue-600 lg:bg-transparent">
           <img src={BlueSvg} className="hidden lg:block absolute top-0 left-0 object-cover object-center h-full w-full -z-[1]" alt="BlueSVG" />
-          <div className="pt-10 lg:pt-[175px] px-10 text-white">
+          <div className="py-10 lg:pt-[175px] px-10 text-white bg-blue-600 md:bg-transparent">
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-32">
               <div className="w-full flex flex-col gap-3">
                 <h3 className="text-[#EEFF2B]">Get in touch</h3>
@@ -265,7 +265,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row text-center lg:text-left gap-2 lg:gap-0 justify-between text-sm p-6">
+        <div className="flex flex-col lg:flex-row text-center lg:text-left gap-2 lg:gap-0 justify-between text-sm p-6 mt-[50px] md:mt-0">
           <div className="flex self-end lg:self-start gap-5">
             <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition">
               <Instagram size={16} />

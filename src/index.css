@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ Old Data
+*/
+
 * {
   box-sizing: border-box;
   padding: 0;

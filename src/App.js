@@ -22,6 +22,8 @@ import Input from "./components/Input";
 
 import { Instagram, Linkedin, MapIcon, MapPin, Phone, PhoneCall, Twitter } from "lucide-react";
 
+// Old Data
+
 function App() {
   const features = {
     left: [

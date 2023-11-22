@@ -13,7 +13,7 @@ export default function Navbar() {
         alt="CUDE Logo"
       />
 
-      <ul className="hidden lg:flex gap-5 text-sm text-[#3B7FF2]">
+      <ul className="hidden font-semibold lg:flex gap-5 text-sm text-[#3B7FF2]">
         <li>
           <a href="/">
             Home
@@ -47,7 +47,7 @@ export default function Navbar() {
           <XCircle size={24} />
         </button>
 
-        <ul className="mt-10 flex flex-col gap-5 p-5">
+        <ul className="font-semibold mt-10 flex flex-col gap-5 p-5">
           <li>
             <a className="flex items-center gap-2 hover:text-blue-600 transition" href="/" onClick={(e) => setActive(false)}>
               <Home size={16} />

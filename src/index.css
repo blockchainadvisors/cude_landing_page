@@ -26,7 +26,7 @@ html {
   }
 
   h3 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-extrabold;
   }
 
   h4 {
@@ -34,7 +34,7 @@ html {
   }
 
   h5 {
-    @apply text-xl font-bold;
+    @apply text-xl font-extrabold;
   }
 
   h6 {

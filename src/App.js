@@ -265,7 +265,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row text-center lg:text-left gap-2 lg:gap-0 justify-between text-sm p-6 mt-[50px] md:mt-0">
+        <div className="flex flex-col lg:flex-row text-center lg:text-left gap-2 lg:gap-0 justify-between text-sm p-6 footer-messy">
           <div className="flex self-end lg:self-start gap-5">
             <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition">
               <Instagram size={16} />

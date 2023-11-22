@@ -7,3 +7,31 @@
   width: 100vw;
   height: 100vh;
 }
+
+.footer-messy {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 485px) {
+  .footer-messy {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 408px) {
+  .footer-messy {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .footer-messy {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 343px) {
+  .footer-messy {
+    margin-top: 100px;
+  }
+}

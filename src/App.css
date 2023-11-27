@@ -1,10 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
 .App {
+  overflow-x: hidden;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.fancy-header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
 .footer-messy {
@@ -33,4 +39,8 @@
   .footer-messy {
     margin-top: 100px;
   }
+}
+
+.custom-transition {
+  transition: margin 100ms linear;
 }

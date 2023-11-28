@@ -46,7 +46,7 @@ html {
   }
 
   p {
-    @apply text-xs lg:text-base;
+    @apply text-xs md:text-base;
   }
 }
 

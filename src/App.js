@@ -156,8 +156,8 @@ function App() {
         <img className="col-span-1 z-[2] order-first lg:order-last" src={HeroSvg} alt="CUDE Hero" />
       </div>
 
-      <div className="relative h-full w-full pr-0 lg:pr-20 z-[1] pb-10 lg:pb-0 lg:py-10 bg-[#d9e7fc] lg:bg-transparent">
-        <img className="absolute -top-[70px] lg:-top-[210px] left-0 -z-[1] object-center object-cover h-full w-full lg:h-auto lg:w-auto" src={RoundedSvg} alt="RoundedSVG" />
+      <div className="relative h-full w-full pr-0 lg:pr-20 z-[1] pb-10 lg:pb-0 lg:py-0 bg-[#d9e7fc] lg:bg-transparent">
+        <img className="absolute -top-[70px] lg:-top-[250px] left-0 -z-[1] object-center object-cover h-full w-full lg:h-auto lg:w-auto" src={RoundedSvg} alt="RoundedSVG" />
         <div className="flex flex-col px-5 lg:px-0 lg:flex-row items-center gap-10">
           <img src={RobotSvg} className="w-full w-[auto]" alt="RobotSVG" />
           <div className="w-full flex flex-col gap-5">

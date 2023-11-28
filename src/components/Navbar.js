@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Logo from '../assets/img/logo_transparent_blue.png'
 import { Building, Home, ListChecks, MailQuestion, Menu, XCircle } from 'lucide-react'
+import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [transitionComplete, setTransitionComplete] = useState(false);
   const elementRef = useRef(null);
+  const size = useWindowSize();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,7 +73,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : '20px' }} ref={elementRef}>
+      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : (size <= 767 ? '20px' : '0px') }} ref={elementRef}>
         <h3 className='fancy-header text-center'>
           Why wait? Join our testing partners now
         </h3>

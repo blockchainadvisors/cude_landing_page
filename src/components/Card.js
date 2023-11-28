@@ -8,12 +8,12 @@ export default function Card({
 }) {
   return (
     <div className="flex flex-col gap-5 w-full h-full">
-        <div className='relative rounded-full w-max p-5 overflow-hidden text-white bg-blue-600'>
+        <div className='flex items-center justify-center relative rounded-full w-[84px] aspect-square overflow-hidden text-white bg-blue-600'>
             { image }
         </div>
         <div className="flex flex-col">
             <h5 className="text-blue-600 font-bold">{title}</h5>
-            <span className="text-sm">
+            <span className="text-xs lg:text-sm line-clamp-2">
                 {description}
             </span>
         </div>

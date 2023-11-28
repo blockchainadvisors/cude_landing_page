@@ -33,7 +33,7 @@ export default function Navbar() {
   }, [elementRef]);
 
   return (
-    <div className={`fixed top-0 left-0 w-full px-10 py-[20px] z-[10] bg-white`}>
+    <div className={`fixed top-0 left-0 w-full px-5 lg:px-10 py-[20px] z-[10] bg-white`}>
       <div className="flex items-center justify-between">
         <img
           className="h-5 w-auto"
@@ -71,8 +71,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : '0' }} ref={elementRef}>
-        <h3 className='fancy-header'>
+      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : '20px' }} ref={elementRef}>
+        <h3 className='fancy-header text-center'>
           Why wait? Join our testing partners now
         </h3>
         <a
@@ -83,7 +83,7 @@ export default function Navbar() {
         </a>
       </div>
 
-      <div className='pb-[95px]' style={{ display: scrolled ? 'block' : 'none' }}>&nbsp;</div>
+      <div className='pb-[50px] lg:pb-[95px]' style={{ display: scrolled ? 'block' : 'none' }}>&nbsp;</div>
 
       <div className={`${isActive ? 'fixed' : 'hidden'} top-0 left-0 w-full h-full bg-white text-black z-50`}>
         <button className='absolute top-5 right-5 hover:text-blue-600' onClick={() => setActive(prev => !prev)}>

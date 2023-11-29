@@ -43,7 +43,7 @@ export default function Navbar() {
           alt="CUDE Logo"
         />
 
-        <ul className="hidden font-semibold lg:flex gap-5 text-sm text-[#3B7FF2]">
+        <ul className="hidden font-semibold md:flex gap-5 text-sm text-[#3B7FF2]">
           <li>
             <a href="/">
               Home
@@ -66,14 +66,14 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button className='outline-none hover:text-blue-600 transition' onClick={() => setActive(prev => !prev)}>
             <Menu size={16} />
           </button>
         </div>
       </div>
 
-      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : (size <= 767 ? '20px' : '0px') }} ref={elementRef}>
+      <div className={`flex flex-col items-center justify-center gap-3 custom-transition`} style={{ marginTop: scrolled ? '-200px' : (size.width <= 767 ? '20px' : '0px') }} ref={elementRef}>
         <h3 className='fancy-header text-center'>
           Why wait? Join our testing partners now
         </h3>
@@ -85,7 +85,7 @@ export default function Navbar() {
         </a>
       </div>
 
-      <div className='pb-[50px] lg:pb-[95px]' style={{ display: scrolled ? 'block' : 'none' }}>&nbsp;</div>
+      <div className='pb-[50px] md:pb-[95px]' style={{ display: scrolled ? 'block' : 'none' }}>&nbsp;</div>
 
       <div className={`${isActive ? 'fixed' : 'hidden'} top-0 left-0 w-full h-full bg-white text-black z-50`}>
         <button className='absolute top-5 right-5 hover:text-blue-600' onClick={() => setActive(prev => !prev)}>

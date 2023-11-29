@@ -34,15 +34,15 @@ html {
   }
 
   h4 {
-    @apply text-2xl text-blue-500 font-sans;
+    @apply text-2xl text-blue-500;
   }
 
   h5 {
-    @apply text-xl font-bold;
+    @apply text-base md:text-xl font-bold;
   }
 
   h6 {
-    @apply text-lg font-normal leading-7 font-sans;
+    @apply text-lg font-normal leading-7;
   }
 
   p {

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
-import HeroSvg from './assets/svg/hero.webp';
-import RoundedSvg from './assets/svg/rounded.svg';
+import HeroSvg from './assets/img/hero.png';
+import RoundedSvg from './assets/img/rounded.png';
 import RobotSvg from './assets/svg/robot.webp';
 
 // Icons
@@ -167,7 +167,7 @@ function App() {
       <div className="relative h-full w-full pr-0 lg:pr-20 z-[1] pb-10 lg:pb-0 lg:py-0 bg-[#d9e7fc] lg:bg-transparent">
         <img className="absolute -top-[90px] md:-top-[40px] lg:-top-[250px] left-0 -z-[1] object-center object-cover h-full w-full lg:h-auto lg:w-auto" src={RoundedSvg} alt="RoundedSVG" />
         <div className="flex flex-col px-5 md:px-0 md:flex-row items-center gap-10">
-          <img src={RobotSvg} className="h-full w-[auto] md:w-[50%] lg:w-[auto]" alt="RobotSVG" />
+          <img src={RobotSvg} className="col-span-1 w-[auto] md:w-[50%] lg:w-[auto]" alt="RobotSVG" />
           <div className="w-full flex flex-col gap-5">
             <h1 className="text-[#3B7FF2] pr-10 md:pr-0">Unveiling a Game-Changing Innovation</h1>
             

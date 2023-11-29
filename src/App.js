@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 
 import HeroSvg from './assets/img/hero.png';
-import RoundedSvg from './assets/img/rounded.png';
-import RobotSvg from './assets/svg/robot.webp';
+import RoundedSvg from './assets/svg/rounded.svg';
+import RobotSvg from './assets/png/robot.png';
 
 // Icons
 import PuzzleSvg from './assets/svg-icons/puzzle.svg';

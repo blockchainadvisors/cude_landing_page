@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
-import HeroSvg from './assets/svg/hero.svg';
+import HeroSvg from './assets/svg/hero.webp';
 import RoundedSvg from './assets/svg/rounded.svg';
-import RobotSvg from './assets/svg/robot.svg';
+import RobotSvg from './assets/svg/robot.webp';
 
 // Icons
 import PuzzleSvg from './assets/svg-icons/puzzle.svg';

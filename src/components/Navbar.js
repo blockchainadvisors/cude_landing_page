@@ -80,6 +80,7 @@ export default function Navbar() {
         <a
           className="bg-blue-600 hover:bg-blue-600/90 text-white text-sm rounded-sm py-2 px-10 lg:px-24 transition"
           href="https://prototype.thecude.com"
+          target="_blank" rel="noreferrer"
         >
           Join the testing partners
         </a>

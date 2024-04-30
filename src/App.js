@@ -155,7 +155,7 @@ function App() {
               Welcome to the CUDE, a revolutionary B2B framework that is changing the way organizations protect their software intellectual property (IP). At CUDE, we are more than just a software security platform – we are a dynamic, forward-thinking team on a mission to redefine the landscape of IP security.
             </p>
 
-            <a href="https://prototype.thecude.com" className="mt-0 lg:mt-5 bg-blue-600 hover:bg-blue-600/90 text-white text-sm rounded-sm py-2 px-10 self-start transition">
+            <a href="https://prototype.thecude.com" className="mt-0 lg:mt-5 bg-blue-600 hover:bg-blue-600/90 text-white text-sm rounded-sm py-2 px-10 self-start transition" target="_blank" rel="noreferrer">
               Join the testing partners
             </a>
           </div>
@@ -206,6 +206,7 @@ function App() {
         <a
           className="mt-5 bg-blue-600 hover:bg-blue-600/90 text-white text-sm rounded-sm py-2 px-24 transition self-center lg:self-start"
           href="https://prototype.thecude.com"
+          target="_blank" rel="noreferrer"
         >
           Join to test
         </a>
@@ -273,18 +274,18 @@ function App() {
 
       <div className="flex flex-col lg:flex-row text-center lg:text-left gap-2 lg:gap-0 justify-between text-sm p-6 footer-messy">
         <div className="flex items-center self-end lg:self-start gap-5">
-          <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition">
+          <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition" target="_blank" rel="noreferrer">
             <Instagram size={16} />
           </a>
-          <a href="https://www.x.com/thecude_team" className="hover:text-blue-600 transition">
+          <a href="https://www.x.com/thecude_team" className="hover:text-blue-600 transition" target="_blank" rel="noreferrer">
             <img src={TwitterSvg} alt="Twitter" width={16} height="auto" />
           </a>
-          <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition">
+          <a href="https://www.linkedin.com/company/thecude" className="hover:text-blue-600 transition" target="_blank" rel="noreferrer">
             <img src={LinkedInSvg} alt="LinkedIn" width={16} height="auto" />
           </a>
         </div>
         <div>
-          Copyright ©️ 2023 All rights reserved. / Privacy / Terms of Use / Cookie preferences / Do not sell my personal information.
+          Copyright ©️ 2023 All rights reserved. / <a href="/pages/privacy.html" target="_blank" rel="noreferrer">Privacy</a> / <a href="/pages/terms-of-use.html" target="_blank" rel="noreferrer">Terms of Use</a> / <a href="/pages/cookie-preferences.html" target="_blank" rel="noreferrer">Cookie preferences</a> / Do not sell my personal information.
         </div>
       </div>
 
